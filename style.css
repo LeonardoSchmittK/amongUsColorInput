@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+::selection {
+  background-color: red;
+}
+body {
+  background-color: rgb(16, 15, 15);
+}
+
+.interface {
+  margin: 50px auto;
+  max-width: 700px;
+  height: 700px;
+  padding: 50px 50px;
+  background: radial-gradient(rgba(184, 184, 184, 0.549), white);
+  border-radius: 10px;
+  border: 1px solid rgb(163, 163, 163);
+  box-shadow: 10px 10px 0px rgb(201, 201, 201),
+    inset 5px 5px 1px rgb(202, 202, 202);
+}
+
+.header {
+  width: 300px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.title {
+  font-size: 4em;
+  line-height: 55px;
+  margin-bottom: 20px;
+  text-shadow: -5px 1px 1px rgb(206, 206, 205);
+}
+
+.body {
+  margin: auto;
+  width: 180px;
+  height: 250px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 130px;
+  border-bottom-left-radius: 30px;
+  background-color:#ff0000;
+  border-left: 12px solid black;
+  border-right: 12px solid black;
+  border-top: 12px solid black;
+}
+
+
+.visor {
+  width: 140px;
+  height: 80px;
+  margin-top: 40px;
+  margin-left: -30px;
+  border-radius: 50px;
+  background-color: #3b77a8;
+  border: 12px solid black;
+  position: relative;
+}
+.visor::before {
+  content: "";
+  position: absolute;
+  background-color: #6fbaf7;
+  width: 100px;
+  height: 35px;
+  margin: 3px 5px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 80px;
+  border-top-left-radius: 80px;
+}
+.visor::after {
+  content: "";
+  position: absolute;
+  background-color: #ddd3d3;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 50px;
+  height: 15px;
+  border-radius: 50%;
+  clip: pol;
+}
+
+.leg {
+  width: 80px;
+  height: 73px;
+  border-left: 12px solid black;
+  border-right: 12px solid black;
+  border-bottom: 12px solid black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 20px;
+   background-color: #ff0000; 
+}
+
+.left-leg {
+  margin-top: -74px;
+  margin-left: 88px;
+}
+
+.right-leg {
+  margin-top: 22px;
+  margin-left: -5px;
+  border-top-right-radius: 20px;
+}
+
+ .leg:last-child::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 54px;
+  height: 10px;
+  margin-left: -51px;
+  margin-top: -1px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+} 
+
+.backpack {
+  width: 43px;
+  height: 120px;
+  background-color: #ff0000;
+  border: 12px solid #000000;
+  border-radius: 20px;
+  margin-top: -30px;
+  margin-left: 160px;
+}
+
