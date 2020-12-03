@@ -4,5 +4,5 @@
 - [x] Make a chracter using pure CSS
 - [x] Change the character color as being the input value
 - [x] Use localStorage to store the input color value. If the page is refreshed, the value remains so
-- [ ] Organize the code
+- [x] Organize the code
       ![screenshot](screenshot.png)

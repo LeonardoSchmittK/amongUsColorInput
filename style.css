@@ -8,14 +8,20 @@
 ::selection {
   background-color: red;
 }
+
+input[type="color"] {
+  font-size: 50px;
+  height: 20px;
+}
+
 body {
-  background-color: rgb(16, 15, 15);
+  background-color: #100f0f;
 }
 
 .interface {
   margin: 50px auto;
   max-width: 700px;
-  height: 700px;
+  height: 750px;
   padding: 50px 50px;
   background: radial-gradient(rgba(184, 184, 184, 0.549), white);
   border-radius: 10px;
@@ -25,9 +31,18 @@ body {
 }
 
 .header {
-  width: 300px;
+  width: inherit;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+hr {
+  margin-top: 20px;
 }
 .title {
   font-size: 4em;
@@ -43,12 +58,11 @@ body {
   border-top-left-radius: 60px;
   border-top-right-radius: 130px;
   border-bottom-left-radius: 30px;
-  background-color:#ff0000;
+  background-color: #ff0000;
   border-left: 12px solid black;
   border-right: 12px solid black;
   border-top: 12px solid black;
 }
-
 
 .visor {
   width: 140px;
@@ -92,7 +106,7 @@ body {
   border-bottom: 12px solid black;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 20px;
-   background-color: #ff0000; 
+  background-color: #ff0000;
 }
 
 .left-leg {
@@ -106,7 +120,7 @@ body {
   border-top-right-radius: 20px;
 }
 
- .leg:last-child::before {
+.leg:last-child::before {
   content: "";
   position: absolute;
   background-color: rgb(0, 0, 0);
@@ -116,7 +130,7 @@ body {
   margin-top: -1px;
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
-} 
+}
 
 .backpack {
   width: 43px;
@@ -128,3 +142,9 @@ body {
   margin-left: 160px;
 }
 
+@media only screen and (max-width:700px) {
+
+  .title {
+    font-size: 3em;
+  }
+}
